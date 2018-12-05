@@ -13,6 +13,7 @@
 
 Carolina Salluzzi"""@en ;
                                    <http://purl.org/dc/terms/rights> "This ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/."@en ;
+                                   <http://purl.org/dc/terms/title> "ACRO (Aesthetic and Critical Reasoning Ontology)"@en ;
                                    rdfs:comment "ACRO (Aesthetic and Critical Reasoning Ontology) is a small ontology for describing how a professional art critic reasons on a visual work of art. We have populated it by applying it on the critical interpretation, carried by Antonello Negri, of George Grosz's lost artwork \"Der Abenteurer\"."@en ;
                                    owl:versionInfo "1.0.0"@en .
 
@@ -2716,8 +2717,8 @@ acro:wild_West rdf:type owl:NamedIndividual ,
 
 <http://purl.org/dc/terms/LCSH> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                 <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#LCSH-003> ;
-                                rdfs:comment "The set of labeled concepts specified by the Library of Congress Subject Headings."@en ;
-                                rdfs:label "LCSH"@en .
+                                rdfs:label "LCSH"@en ;
+                                rdfs:comment "The set of labeled concepts specified by the Library of Congress Subject Headings."@en .
 
 
 <http://purl.org/dc/terms/MESH> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#MESH-003> ;
@@ -2736,8 +2737,8 @@ acro:wild_West rdf:type owl:NamedIndividual ,
 
 <http://purl.org/dc/terms/TGN> rdfs:seeAlso <http://www.getty.edu/research/tools/vocabulary/tgn/index.html> ;
                                rdfs:label "TGN"@en ;
-                               rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                rdfs:comment "The set of places specified by the Getty Thesaurus of Geographic Names."@en ;
+                               rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#TGN-003> .
 
 
@@ -2748,21 +2749,21 @@ acro:wild_West rdf:type owl:NamedIndividual ,
                                rdfs:seeAlso <http://www.udcc.org/> .
 
 
-<http://purl.org/dc/terms/accrualMethod> rdfs:label "Accrual Method"@en ;
-                                         <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualMethod-003> ;
+<http://purl.org/dc/terms/accrualMethod> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualMethod-003> ;
+                                         rdfs:label "Accrual Method"@en ;
                                          rdfs:comment "The method by which items are added to a collection."@en ;
                                          rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 
 
-<http://purl.org/dc/terms/accrualPeriodicity> rdfs:label "Accrual Periodicity"@en ;
-                                              <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPeriodicity-003> ;
+<http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPeriodicity-003> ;
+                                              rdfs:label "Accrual Periodicity"@en ;
                                               rdfs:comment "The frequency with which items are added to a collection."@en ;
                                               rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 
 
 <http://purl.org/dc/terms/accrualPolicy> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                         rdfs:comment "The policy governing the addition of items to a collection."@en ;
                                          <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#accrualPolicy-003> ;
+                                         rdfs:comment "The policy governing the addition of items to a collection."@en ;
                                          rdfs:label "Accrual Policy"@en .
 
 
@@ -2780,8 +2781,8 @@ acro:wild_West rdf:type owl:NamedIndividual ,
                                       <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#provenance-002> .
 
 
-<http://purl.org/dc/terms/rightsHolder> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                        <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#rightsHolder-002> ;
+<http://purl.org/dc/terms/rightsHolder> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#rightsHolder-002> ;
+                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                         rdfs:comment "A person or organization owning or managing rights over the resource."@en ;
                                         rdfs:label "Rights Holder"@en .
 
