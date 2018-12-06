@@ -59,7 +59,7 @@ h6 {
     margin: 0 0 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-	color: #afaeae;
+	color: #111;
 }
 
 h1.h-xlight,h2.h-xlight,h3.h-xlight ,h4.h-xlight ,h5.h-xlight ,h6.h-xlight  {
@@ -75,7 +75,7 @@ h1.h-bold,h2.h-bold,h3.h-bold ,h4.h-bold ,h5.h-bold ,h6.h-bold  {
 }
 
 h1.font-light,h2.font-light,h3.font-light,h4.font-light,h5.font-light,h6.font-light {
-	color: #a5a7a7;
+	color: #fff;
 }
 
 .big-heading {
@@ -430,12 +430,12 @@ hr.bold {
 --- Intro
 ============================ */
 
-.hero { background: url(../img/crit.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
-.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 40px 0 10px; font-weight: 900; color: #ffffff;}
+.hero { background: url(../img/hero-bg.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 200px 0 200px 0; height: auto; }
+.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 40px 0 10px; font-weight: 900; color: #fff;}
 .hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero p { font-size: 24px; font-weight: 400; color: #ffffff; }
-.learn-more-btn { background: rgb(0, 0, 0); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #000000; -moz-box-shadow: 0px 3px 0px 0px #222222; box-shadow: 0px 3px 0px 0px #202222; margin: 60px 0 0; font-weight: bold; }
-.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(127, 128, 127, 0.6); color: #fff; }
+.hero p { font-size: 24px; font-weight: 400; color: #fefefe; }
+.learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
+.learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 
 
 
@@ -628,7 +628,7 @@ hr.bold {
 .item img {
     display: block;
     width: 100%;
-	height: auto;
+    height: auto;
 }
 
 /* ===========================
@@ -968,10 +968,10 @@ a.btn:focus{
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #343535;
+    border: 1px solid #28c3ab;
     outline: 0;
     color: #000;
-    background-color: #383838;
+    background-color: #28c3ab;
 }
 
 .btn-huge {
