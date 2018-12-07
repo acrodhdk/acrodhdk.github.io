@@ -883,6 +883,10 @@ acro:width rdf:type owl:DatatypeProperty ;
 acro:Artist rdf:type owl:Class ;
             rdfs:subClassOf acro:Person ,
                             [ rdf:type owl:Restriction ;
+                              owl:onProperty acro:belongsTo ;
+                              owl:someValuesFrom acro:Movement
+                            ] ,
+                            [ rdf:type owl:Restriction ;
                               owl:onProperty acro:comparedTo ;
                               owl:allValuesFrom acro:Artist
                             ] ;
@@ -894,8 +898,20 @@ acro:Artist rdf:type owl:Class ;
 acro:Artwork rdf:type owl:Class ;
              rdfs:subClassOf acro:Creative_work ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty acro:belongsTo ;
+                               owl:someValuesFrom acro:Movement
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty acro:createdBy ;
                                owl:someValuesFrom acro:Artist
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty acro:hasReference ;
+                               owl:someValuesFrom acro:Event
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty acro:hasTheme ;
+                               owl:someValuesFrom acro:Topic
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty acro:comparedTo ;
@@ -977,6 +993,10 @@ acro:Interpretation rdf:type owl:Class ;
 ###  https://acrodhdk.github.io/acro#Main_Artist
 acro:Main_Artist rdf:type owl:Class ;
                  rdfs:subClassOf acro:Artist ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty acro:influencedBy ;
+                                   owl:someValuesFrom acro:Person
+                                 ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty acro:creatorOf ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -2232,8 +2252,8 @@ acro:wild_West rdf:type owl:NamedIndividual ,
 
 
 <http://purl.org/dc/terms/IMT> rdfs:seeAlso <http://www.iana.org/assignments/media-types/> ;
-                               rdfs:comment "The set of media types specified by the Internet Assigned Numbers Authority."@en ;
                                rdfs:label "IMT"@en ;
+                               rdfs:comment "The set of media types specified by the Internet Assigned Numbers Authority."@en ;
                                rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 
 
